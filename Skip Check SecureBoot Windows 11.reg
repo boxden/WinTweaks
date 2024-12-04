@@ -1,0 +1,5 @@
+Windows Registry Editor Version 5.00
+
+; Пропустить проверку наличия Secure Boot
+[HKEY_LOCAL_MACHINE\SYSTEM\Setup\LabConfig]
+"BypassSecureBootCheck"=dword:00000001
