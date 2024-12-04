@@ -1,5 +1,0 @@
-Windows Registry Editor Version 5.00
-
-; Пропустить проверку наличия TPM 2.0
-[HKEY_LOCAL_MACHINESYSTEMSetupLabConfig]
-BypassTPMCheck=dword00000001
