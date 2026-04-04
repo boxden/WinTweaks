@@ -1,4 +1,5 @@
 Windows Registry Editor Version 5.00
 
-;создал denbox
-[-HKEY_CLASSES_ROOT\*\shellex\ContextMenuHandlers\ModernSharing]
+; Отключить пункт "Отправить" из контекстного меню
+[HKEY_CLASSES_ROOT\AllFilesystemObjects\shellex\ContextMenuHandlers\SendTo]
+@="-{7BA4C740-9E81-11CF-99D3-00AA004AE837}"

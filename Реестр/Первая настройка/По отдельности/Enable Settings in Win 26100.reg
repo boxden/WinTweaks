@@ -1,0 +1,4 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Start]
+"VisiblePlaces"=hex(3):86,08,73,52,AA,51,43,42,9F,7B,27,76,58,46,59,D4

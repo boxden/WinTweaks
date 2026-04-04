@@ -1,0 +1,21 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"EnableSnapAssistFlyout"=dword:00000000
+"EnableSnapBar"=dword:00000000
+
+
+Если через PowerShell
+
+# Отключить показ приветственного экрана после обновлений и при входе в систему
+Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" -Name "SubscribedContent-310093Enabled" -Value 0
+
+# Отключить предложения по завершению настройки устройства
+Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" -Name "SubscribedContent-338388Enabled" -Value 0
+
+# Отключить советы и подсказки при использовании Windows
+Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" -Name "SubscribedContent-338389Enabled" -Value 0
+Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" -Name "SystemPaneSuggestionsEnabled" -Value 0
+
+
+Если ты хочешь применить это для всех пользователей, нужно вносить изменения в HKEY_LOCAL_MACHINE, но эти параметры специфичны для HKEY_CURRENT_USER, так как они индивидуальны для каждого профиля.

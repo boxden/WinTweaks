@@ -1,0 +1,35 @@
+Windows Registry Editor Version 5.00
+; Работает на Windows 10 Pro 22H2 x64 [Build 19045] и более
+
+[HKEY_CURRENT_USER\Control Panel\Mouse]
+"MouseSpeed"="0" ;Отключает ускорение мыши / Требуется перезагрузка
+"MouseSensitivity"="11" ;Задаёт скорость курсора на 11 вместо 10 / Требуется перезагрузка
+
+[HKEY_CURRENT_USER\Software\Microsoft\Clipboard]
+"EnableClipboardHistory"=dword:00000001 ;Включает буфер обмена (Win + V)
+"ShellHotKeyUsed"=dword:00000001 ;I dont know
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+"ShowRecent"=dword:00000000 ;Скрывает последние файлы
+"ShowFrequent"=dword:00000000 ;Скрывает часто используемые файлы/папки
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"HideFileExt"=dword:00000000 ;Показывает расширение файла
+"MultiTaskingAltTabFilter"=dword:00000003 ;Отключается вкладки браузера в режиме ALT + Tab
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3]
+"1806"=dword:00000000 ;Отключается предупреждение о загрузке файлов из интернета
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Notifications\Settings\Windows.SystemToast.SecurityAndMaintenance]
+"Enabled"=dword:00000000 ;Отключает уведомления безопасности и обслуживания
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+"SubscribedContent-310093Enabled"=dword:00000000 ;Show me the Windows...
+"SubscribedContent-338389Enabled"=dword:00000000 ;Get Tips, tricks, and balls...
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\UserProfileEngagement]
+"ScoobeSystemSettingEnabled"=dword:00000000 ;Suggest ways i cunt...
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System]
+"ConsentPromptBehaviorAdmin"=dword:00000000 ;Отключается предупреждение о запуске файла
+"PromptOnSecureDesktop"=dword:00000000 ;Отключается предупреждение о запуске файла

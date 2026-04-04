@@ -1,0 +1,42 @@
+Windows Registry Editor Version 5.00
+; Работает на Windows 11 Pro 24H2 x64 [Build 26100] и более
+
+[HKEY_CURRENT_USER\Control Panel\Mouse]
+"MouseSpeed"="0" ;Отключает ускорение мыши / Требуется перезагрузка
+"MouseSensitivity"="11" ;Задаёт скорость курсора на 11 вместо 10 / Требуется перезагрузка
+
+[HKEY_CURRENT_USER\Software\Microsoft\Clipboard]
+"EnableClipboardHistory"=dword:00000001 ;Включает буфер обмена (Win + V)
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+"ShowRecent"=dword:00000000 ;Скрывает последние файлы
+"ShowFrequent"=dword:00000000 ;Скрывает часто используемые файлы/папки
+"ShowCloudFilesInQuickAccess"=dword:00000000 ;Скрывает облачные файлы в быстром доступе (Office, OneDrive и т.д.)
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"HideFileExt"=dword:00000000 ;Показывает расширение файла
+"EnableSnapBar"=dword:00000000 ;Отключает панель Snap Bar
+"EnableSnapAssistFlyout"=dword:00000000 ;Отключает всплывающее окно Snap Assist
+"MultiTaskingAltTabFilter"=dword:00000003 ;Отключает вкладки браузера в режиме ALT + Tab
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\TaskbarDeveloperSettings]
+"TaskbarEndTask"=dword:00000001 ;Включает кнопку "Завершить задачу" в панели задач
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3]
+"1806"=dword:00000000 ;Отключает предупреждение о загрузке файлов из интернета
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Notifications\Settings\Windows.SystemToast.SecurityAndMaintenance]
+"Enabled"=dword:00000000 ;Отключает уведомления безопасности и обслуживания
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Start]
+"VisiblePlaces"=hex(3):86,08,73,52,AA,51,43,42,9F,7B,27,76,58,46,59,D4
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Notifications\Settings\Windows.SystemToast.StartupApp]
+"Enabled"=dword:00000001 ;Включает уведомления о запуске приложений
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+"SubscribedContent-310093Enabled"=dword:00000000 ;Show me the Windows...
+"SubscribedContent-338389Enabled"=dword:00000000 ;Get Tips, tricks, and balls...
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\UserProfileEngagement]
+"ScoobeSystemSettingEnabled"=dword:00000000 ;Suggest ways i cunt...

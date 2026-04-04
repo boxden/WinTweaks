@@ -1,0 +1,5 @@
+Windows Registry Editor Version 5.00
+
+; Testing on Windows 10 Pro x64 Build 22H2 19045
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"ShowSyncProviderNotifications"=dword:00000000
